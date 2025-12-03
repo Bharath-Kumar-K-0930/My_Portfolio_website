@@ -1,72 +1,45 @@
-# Bharath Kumar K - <a href="https://data-analytic-portfolio.vercel.app/">Data Analyst Portfolio </a>
+# Bharath Kumar K — <a href="https://bharath-kumar-k-0930.github.io/My_Portfolio_website/">Cyber Developer & Data Scientist </a>
 
-## Deployed in the Vercel: 
-### click here to visit website <a href="https://data-analytic-portfolio.vercel.app/" >https://data-analytic-portfolio.vercel.app/ </a>
+> Cyber-punk themed personal portfolio — single page (HTML/CSS/JS) showcasing projects, skills, and contact channels.  
+> Live demo: **https://bharath-kumar-k-0930.github.io/My_Portfolio_website/**
 
-## 📊 About Me
+---
 
-Hi, I'm Bharath Kumar K, a passionate Data Analyst and MCA student specializing in transforming complex data into actionable business insights. With expertise in SQL, Python, Power BI, and Machine Learning, I build systems that drive data-driven decision-making.
+## 🚀 Quick summary
+I’m **Bharath Kumar K** — an MCA student and Cyber Developer focused on Data Analytics, Machine Learning, and Full-Stack interfaces. This repository contains a futuristic, cyberpunk-styled single-page portfolio (HTML + CSS + minimal JS) that highlights my skills, projects and ways to connect.
 
-## 🎯 Skills & Technologies
+---
 
-**Programming:** Python, SQL  
-**Data Visualization:** Power BI, Tableau, Excel  
-**Databases:** MongoDB, MySQL  
-**Machine Learning:** Predictive Modeling, Data Cleaning  
-**Tools:** AWS, Git, Jupyter Notebooks  
-**Soft Skills:** Problem-Solving, Communication, Analytical Thinking  
+## 🔗 Live demo
+**https://bharath-kumar-k-0930.github.io/My_Portfolio_website/**
 
-## 📈 Projects
+---
 
-1. **Daily Motivator Analytics**  
-   A full-stack web application integrated with Power BI dashboard to track user retention and habit completion rates over 90 days.  
-   **Technologies:** Power BI, Full Stack Development, Data Visualization  
-   **Key Features:** Real-time analytics, user engagement metrics  
+## ✨ Features
+- Single-page responsive layout: Home, About (System Profile), Skills (Operational Systems), Projects, Contact.
+- Cyberpunk visuals: neon radial backgrounds, glitch header, animated grid overlay, robot avatar, interactive cards.
+- Lightweight — no build step required (static HTML/CSS/JS).
+- Accessible contact links (mailto, GitHub, LinkedIn, YouTube, Instagram).
+- Mobile responsive breakpoints and reduced-motion friendly structure.
 
-2. **IPL Match Prediction**  
-   Machine Learning model using historical IPL data to predict match outcomes. Data cleaned with Pandas and stored in MongoDB.  
-   **Technologies:** Python, Machine Learning, MongoDB  
-   **Key Features:** Predictive analytics, data preprocessing  
+---
 
-3. **Deloitte Job Simulation**  
-   Completed practical tasks in Data Analysis and Forensic Technology, analyzing datasets to solve business problems.  
-   **Technologies:** Data Analysis, Tableau, Forensics  
-   **Key Features:** Business problem-solving, data visualization  
+## 🧰 Tech / Tools
+- **HTML5**, **CSS3**, vanilla **JavaScript**  
+- **Font Awesome** (icons)  
+- **Google Fonts** (Orbitron, Exo 2)  
+- Hosting: Vercel (static)
 
-4. **AI for Climate Modeling**  
-   Research paper on using AI for disaster prediction, presented at the National Student Research Symposium.  
-   **Technologies:** Research, AI Concepts, Presentation  
-   **Key Features:** Climate data analysis, predictive modeling  
+---
 
-## 🎓 Certifications
+## 📁 Repository contents
+- `index.html` — single-page site (markup + inline styles + small scripts)  
+- `assets/` — (optional) images, icons, or external files if you move styles/scripts out  
+- `README.md` — this file
 
-- Power BI Certification - Office Master (2025)  
-- Excel Basics for Data Analysis - IBM / Coursera (2025)  
-- Copilot for Power BI - Microsoft (2025)  
-- Azure AI Fundamentals - Infosys Springboard (2025)  
-- Database Management System - Infosys (2025)  
-- Agentic Prompt Engineering - UiPath (2025)  
+---
 
-## 📚 Education
+## 🛠️ Run locally
 
-- **MCA (Master of Computer Applications)** - Kristu Jayanti College, Bengaluru (2024 - Present)  
-  Focus: Data Science  
-  Achievements: Top 10 in class, Research Paper on Climate Modeling  
-
-- **B.Sc (Computers)** - Kuvempu University (2021 - 2024)  
-  Graduated with 86%  
-  Achievements: 1st Place in District Level competition  
-
-## 📞 Contact
-
-- **Email:** bharathkumarkbk10@gmail.com  
-- **Location:** Bengaluru, Karnataka  
-- **LinkedIn:** Bharath Kumar K  
-- **GitHub:** Bharath-Kumar-K-0930  
-- **Instagram:** @bhar_ath.b.k  
-
-## 🚀 Current Status
-
-Open for Data Analyst roles in Bengaluru. Passionate about leveraging data to solve real-world problems and drive business growth.
-
-This portfolio showcases my journey and expertise in data analytics. Feel free to reach out for collaborations or opportunities!
+   git clone https://github.com/Bharath-Kumar-K-0930/<repo-name>.git
+   cd <repo-name>
