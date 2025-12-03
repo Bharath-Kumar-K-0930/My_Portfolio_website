@@ -1,7 +1,7 @@
-# Bharath Kumar K - <a hyrf="https://data-analytic-portfolio.vercel.app/">Data Analyst Portfolio </a>
+# Bharath Kumar K - <a href="https://data-analytic-portfolio.vercel.app/">Data Analyst Portfolio </a>
 
 ## Deployed in the Vercel: 
-### click here to visit website <a hyrf="https://data-analytic-portfolio.vercel.app/" >https://data-analytic-portfolio.vercel.app/ </a>
+### click here to visit website <a href="https://data-analytic-portfolio.vercel.app/" >https://data-analytic-portfolio.vercel.app/ </a>
 
 ## 📊 About Me
 
