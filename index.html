@@ -503,6 +503,19 @@
             position: relative;
         }
 
+        .project-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 1px solid #333;
+            opacity: 0.8;
+            transition: 0.3s;
+        }
+
+        .project-card:hover .project-img {
+            opacity: 1;
+        }
+
         .project-card:hover {
             border-color: var(--neon-blue);
             transform: translateY(-10px);
@@ -850,12 +863,37 @@
     <section id="projects">
         <h2 class="section-title">DEPLOYED PROJECTS</h2>
         <div class="project-grid">
+            <!-- Project: Matchly AI -->
+            <div class="project-card">
+                <div class="project-header">
+                    <span>Feb 2026</span>
+                    <i class="fas fa-file-contract"></i>
+                </div>
+                <img src="images/matchly_ai.png" alt="Matchly AI" class="project-img">
+                <div class="project-body">
+                    <h3>Matchly AI</h3>
+                    <p>Advanced IT Resume Analyzer with agentic extraction and semantic scoring. Specialized for 15+ IT
+                        domains, offering deep security analysis and gap analysis insights.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">FastAPI</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Spacy</span>
+                        <span class="tech-badge">Security</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://matchly-ai.vercel.app/" target="_blank" class="link-btn">Live Demo <i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
             <!-- Project: LeadPilot AI -->
             <div class="project-card">
                 <div class="project-header">
                     <span>Jan 2026</span>
                     <i class="fas fa-rocket"></i>
                 </div>
+                <img src="images/leadpilot_ai.png" alt="LeadPilot AI" class="project-img">
                 <div class="project-body">
                     <h3>LeadPilot AI</h3>
                     <p>Autonomous lead qualification and personalized engagement at scale using agentic AI. Features
@@ -872,33 +910,13 @@
                     </div>
                 </div>
             </div>
-            <!-- Project 1 -->
-            <div class="project-card">
-                <div class="project-header">
-                    <span>Aug 2025 - Dec 2025</span>
-                    <i class="fas fa-paw"></i>
-                </div>
-                <div class="project-body">
-                    <h3>PetSpeak AI</h3>
-                    <p>AI-driven platform analyzing pet vocal patterns to predict emotional states. Integrated
-                        e-commerce workflow for instant needs addressing.</p>
-                    <div class="tech-stack">
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">TensorFlow</span>
-                        <span class="tech-badge">React</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://pet-voice-translator.vercel.app" target="_blank" class="link-btn">Live Demo <i
-                                class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-            </div>
             <!-- Project: IntelliHire AI -->
             <div class="project-card">
                 <div class="project-header">
                     <span>Jan 2026</span>
                     <i class="fas fa-briefcase"></i>
                 </div>
+                <img src="images/intellihire_ai.png" alt="IntelliHire AI" class="project-img">
                 <div class="project-body">
                     <h3>IntelliHire AI</h3>
                     <p>IntelliHire AI is an intelligent job search and matching platform that helps users find their
@@ -922,6 +940,7 @@
                     <span>Jan 2026</span>
                     <i class="fas fa-lock"></i>
                 </div>
+                <img src="images/authboard.png" alt="AuthBoard" class="project-img">
                 <div class="project-body">
                     <h3>AuthBoard</h3>
                     <p>Built AuthBoard – a secure authentication-based dashboard with CRUD operations. Featuring
@@ -939,12 +958,35 @@
                     </div>
                 </div>
             </div>
+            <!-- Project: PetSpeak AI -->
+            <div class="project-card">
+                <div class="project-header">
+                    <span>Dec 2025</span>
+                    <i class="fas fa-paw"></i>
+                </div>
+                <img src="images/petspeak_ai.png" alt="PetSpeak AI" class="project-img">
+                <div class="project-body">
+                    <h3>PetSpeak AI</h3>
+                    <p>AI-driven platform analyzing pet vocal patterns to predict emotional states. Integrated
+                        e-commerce workflow for instant needs addressing.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">TensorFlow</span>
+                        <span class="tech-badge">React</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://pet-voice-translator.vercel.app" target="_blank" class="link-btn">Live Demo <i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
             <!-- Project: AptiArena -->
             <div class="project-card">
                 <div class="project-header">
                     <span>Dec 2025</span>
                     <i class="fas fa-gamepad"></i>
                 </div>
+                <img src="images/aptiarena.png" alt="AptiArena" class="project-img">
                 <div class="project-body">
                     <h3>AptiArena</h3>
                     <p>AI-powered quiz hosting platform. Converts PDF/PPT to real-time interactive competitions with
@@ -970,6 +1012,7 @@
                     <span>Nov 2025 - Dec 2025</span>
                     <i class="fas fa-camera"></i>
                 </div>
+                <img src="images/pixee.png" alt="PIXEE" class="project-img">
                 <div class="project-body">
                     <h3>PIXEE</h3>
                     <p>AI Face Recognition Event Platform. Privacy-first image matching scanning 500+ photos/sec.
@@ -988,12 +1031,13 @@
                     </div>
                 </div>
             </div>
-            <!-- Project 3 -->
+            <!-- Project: GitGrade AI -->
             <div class="project-card">
                 <div class="project-header">
                     <span>Dec 2025</span>
                     <i class="fas fa-code-branch"></i>
                 </div>
+                <img src="images/gitgrade_ai.png" alt="GitGrade AI" class="project-img">
                 <div class="project-body">
                     <h3>GitGrade AI</h3>
                     <p>AI Repository Evaluation System. Generates recruiter-style scoring reports and improvement
@@ -1016,6 +1060,7 @@
                     <span>Apr 2025 - Jul 2025</span>
                     <i class="fas fa-fire"></i>
                 </div>
+                <img src="images/daily_motivator.png" alt="Daily Motivator" class="project-img">
                 <div class="project-body">
                     <h3>Daily Motivator</h3>
                     <p>Full-stack motivational web app with authentication, progress tracking, and gamification.</p>

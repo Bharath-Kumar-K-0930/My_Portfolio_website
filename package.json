@@ -1,0 +1,23 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "> Cyber-punk themed personal portfolio — single page (HTML/CSS/JS) showcasing projects, skills, and contact channels.  \r > Live demo: **https://bharath-kumar-k-0930.github.io/My_Portfolio_website/**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bharath-Kumar-K-0930/My_Portfolio_website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bharath-Kumar-K-0930/My_Portfolio_website/issues"
+  },
+  "homepage": "https://github.com/Bharath-Kumar-K-0930/My_Portfolio_website#readme",
+  "dependencies": {
+    "puppeteer": "^24.37.2"
+  }
+}
