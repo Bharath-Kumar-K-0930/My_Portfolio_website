@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Bharath-Kumar-K-0930/My_Portfolio_website#readme",
   "dependencies": {
-    "puppeteer": "^24.37.2"
+    "puppeteer": "^24.37.2",
+    "vanilla-tilt": "^1.8.1"
   }
 }

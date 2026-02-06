@@ -669,6 +669,40 @@
             text-shadow: 0 0 5px var(--neon-blue);
         }
 
+        /* Footer Flicker */
+        .flicker-text {
+            color: #555;
+            transition: 0.3s;
+        }
+
+        .flicker-text span {
+            animation: text-flicker 3s infinite alternate;
+            color: var(--neon-blue);
+            text-shadow: 0 0 5px var(--neon-blue);
+        }
+
+        @keyframes text-flicker {
+
+            0%,
+            19%,
+            21%,
+            23%,
+            25%,
+            54%,
+            56%,
+            100% {
+                opacity: 1;
+                text-shadow: 0 0 5px var(--neon-blue), 0 0 10px var(--neon-blue);
+            }
+
+            20%,
+            24%,
+            55% {
+                opacity: 0.4;
+                text-shadow: none;
+            }
+        }
+
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.5rem;
@@ -710,6 +744,8 @@
     <div class="cursor-outline"></div>
 
     <div class="cyber-bg"></div>
+    <canvas id="matrixCanvas" style="position: fixed; top: 0; left: 0; z-index: -2; opacity: 0.15;"></canvas>
+    <div class="grid-floor"></div>
     <div class="grid-floor"></div>
     <div class="scanlines"></div>
 
@@ -731,7 +767,9 @@
     <header class="hero" id="home">
         <div class="hero-tags">/// V 2.0.25 SYSTEM ONLINE ///</div>
         <h1 class="glitch-text" data-text="BHARATH KUMAR K">BHARATH KUMAR K</h1>
-        <h2 style="color: var(--neon-pink); margin-bottom: 2rem;">Full Stack Developer Intern</h2>
+
+        <h2 id="hacker-text" style="color: var(--neon-pink); margin-bottom: 2rem; min-height: 38px;">Full Stack
+            Developer Intern</h2>
         <p>MCA Student • Web Innovation • AI Integration • Backend Architecture</p>
         <div style="margin-top: 2rem;">
             <a href="#projects" class="btn-cyber">View Projects</a>
@@ -1169,7 +1207,7 @@
     </section>
 
     <footer style="text-align: center; padding: 2rem; color: #555; background: #000;">
-        <p>SYSTEM ARCHTECTURE BY BHARATH KUMAR K © 2025</p>
+        <p class="flicker-text">SYSTEM ARCHITECTURE BY <span>BHARATH KUMAR K</span> © 2025</p>
     </footer>
 
     <script src="js/splash-cursor.js"></script>
@@ -1211,6 +1249,116 @@
             }
         });
     </script>
+</body>
+
+<!-- Tilt.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".project-card"), {
+        max: 15,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.2,
+        scale: 1.05
+    });
+
+    VanillaTilt.init(document.querySelectorAll(".skill-box, .hologram-card, .timeline-card"), {
+        max: 10,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.1
+    });
+</script>
+
+<script>
+    // Matrix Rain
+    const canvas = document.getElementById('matrixCanvas');
+    const ctx = canvas.getContext('2d');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const katakana = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン';
+    const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const nums = '0123456789';
+    const alphabet = katakana + latin + nums;
+
+    const fontSize = 16;
+    const columns = canvas.width / fontSize;
+
+    const rainDrops = [];
+
+    for (let x = 0; x < columns; x++) {
+        rainDrops[x] = 1;
+    }
+
+    const draw = () => {
+        ctx.fillStyle = 'rgba(10, 10, 18, 0.05)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        ctx.fillStyle = '#0F0'; // Green text
+        ctx.fillStyle = '#00f3ff'; // Neon Blue text
+        ctx.font = fontSize + 'px monospace';
+
+        for (let i = 0; i < rainDrops.length; i++) {
+            const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+            ctx.fillText(text, i * fontSize, rainDrops[i] * fontSize);
+
+            if (rainDrops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                rainDrops[i] = 0;
+            }
+            rainDrops[i]++;
+        }
+    };
+
+    setInterval(draw, 30);
+
+    window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    });
+
+    // Hacker Text Effect
+    const hackerTextElement = document.getElementById("hacker-text");
+    const originalText = "Full Stack Developer Intern";
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()";
+
+    let interactions = 0;
+
+    const hackerEffect = () => {
+        let iteration = 0;
+
+        // Only run if not already running or just once on load
+        // For continuous effect on hover, we can enhance this.
+        // Let's just run it once on load for now.
+
+        const interval = setInterval(() => {
+            hackerTextElement.innerText = originalText
+                .split("")
+                .map((letter, index) => {
+                    if (index < iteration) {
+                        return originalText[index];
+                    }
+                    return letters[Math.floor(Math.random() * 26)];
+                })
+                .join("");
+
+            if (iteration >= originalText.length) {
+                clearInterval(interval);
+            }
+
+            iteration += 1 / 3;
+        }, 30);
+    }
+
+    // Run initially
+    hackerEffect();
+
+    // Run on hover
+    hackerTextElement.onmouseover = event => {
+        hackerEffect();
+    }
+</script>
 </body>
 
 </html>
