@@ -1,4 +1,4 @@
-# Bharath Kumar K — <a href="https://bharath-kumar-k-0930.github.io/My_Portfolio_website/">Software Developer & Backend </a>
+# Bharath Kumar K — <a href="https://bharath-kumar-k-0930.github.io/My_Portfolio_website/">Software Developer & Backend Developer </a>
 
 > Cyber-punk themed personal portfolio — single page (HTML/CSS/JS) showcasing projects, skills, and contact channels.  
 > Live demo: **https://bharath-kumar-k-0930.github.io/My_Portfolio_website/**
